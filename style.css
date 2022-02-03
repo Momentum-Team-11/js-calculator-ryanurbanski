@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+}
+
+.button-box-container {
+    display: flex;
+}
+
+.display-box-container {
+    display: flex;
+    width: 1000px;
+    height: 30px;
+}
+
+h3 {
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+h4 {
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 30px;
+}
+

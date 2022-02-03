@@ -18,7 +18,9 @@ let oneBox = document.getElementById('1-box')                         // couldn'
 console.log(oneBox)
 console.log(oneBox.innerHTML)
 
-
+oneBox.addEventListener('click', function() {
+    console.log('Box ' + oneBox.innerHTML + ' was clicked!')
+})
 
 
 

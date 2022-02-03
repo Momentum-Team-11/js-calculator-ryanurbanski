@@ -28,9 +28,9 @@ h4 {
     border: 2px solid black;
     margin: 10px;
     display: flex;
-    justify-content: center;
+    ustify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 500px;
     height: 30px;
 }
 

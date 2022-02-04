@@ -5,14 +5,18 @@ console.log('javascript is connected and running!!')
 // the calculations
 let workingString = ""
 let displayString = ""
+// let tempNum1 = 0                         // These were a mistake.. i think.. delete if eval works
+// let tempNum2 = 0
+// let tempOpp = ''
+// let totalNum = 0
 
-//Display Box
+// DISPLAY BOX ----------------------------------------------------------------------------------------
 let displayBox = document.getElementById("display-box")
 console.log(displayBox)                                           // show whole object
 console.log(displayBox.innerHTML)                                  //Show the current text of this Object
 
 //change the string for display object
-displayBox.innerHTML = "New string is working!!"
+displayBox.innerHTML = "New string is working!!"                    // test to makes sure I can change the value
 
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
@@ -22,6 +26,7 @@ console.log(oneBox.innerHTML)
 
 oneBox.addEventListener('click', function() {
     console.log('Box ' + oneBox.innerHTML + ' was clicked!')                  // Button 1 pressed
+    
     workingString += oneBox.innerHTML
     console.log('The value of working string is: ' + workingString)     
 })
@@ -81,9 +86,13 @@ eBox.addEventListener('click', function() {
     console.log('The final value of the working string is : ' + workingString)     
     console.log('This string will get convered into a value for the final display.')
 
-    
-})
+    displayString = eval(workingString)
+    console.log('The product of all these should be:  ******  ' + displayString + '  ******')
 
+    displayBox.innerHTML = displayString
+
+
+})
 
 
 

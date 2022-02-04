@@ -13,14 +13,34 @@ console.log(displayObject.innerHTML)                                  //Show the
 //change the string for display object
 displayObject.innerHTML = "New string is working!!"
 
-// set an eventlistener for the buttons
-let oneBox = document.getElementById('1-box')                         // couldn't get querySelector() to work, but this got it done
+// BUTTON EVENT LISTENERS
+let oneBox = document.getElementById('1-box')                           // assign a value for '1-box' 
 console.log(oneBox)
 console.log(oneBox.innerHTML)
 
 oneBox.addEventListener('click', function() {
-    console.log('Box ' + oneBox.innerHTML + ' was clicked!')
+    console.log('Box ' + oneBox.innerHTML + ' was clicked!')                  // Button 1 pressed
+    workingString += oneBox.innerHTML
+    console.log('The value of working string is: ' + workingString)     
 })
+
+let twoBox = document.getElementById('2-box')                            // assign a value for '2-box'
+console.log(twoBox)
+console.log(twoBox.innerHTML)
+
+twoBox.addEventListener('click', function() {
+    console.log('Box ' + twoBox.innerHTML + ' was clicked!')                  // Button 1 pressed
+    workingString += twoBox.innerHTML
+    console.log('The value of working string is: ' + workingString)     
+})
+
+
+
+
+
+
+
+
 
 
 

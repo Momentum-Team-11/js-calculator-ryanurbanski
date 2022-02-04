@@ -6,12 +6,13 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
-let displayObject = document.getElementById("display-box-text")
-console.log(displayObject)                                           // show whole object
-console.log(displayObject.innerHTML)                                  //Show the current text of this Object
+//Display Box
+let displayBox = document.getElementById("display-box")
+console.log(displayBox)                                           // show whole object
+console.log(displayBox.innerHTML)                                  //Show the current text of this Object
 
 //change the string for display object
-displayObject.innerHTML = "New string is working!!"
+displayBox.innerHTML = "New string is working!!"
 
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
@@ -79,6 +80,8 @@ eBox.addEventListener('click', function() {
     displayString = workingString                                                           // Write a function to parse and evaluate  
     console.log('The final value of the working string is : ' + workingString)     
     console.log('This string will get convered into a value for the final display.')
+
+    
 })
 
 

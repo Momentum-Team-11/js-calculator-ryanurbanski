@@ -141,6 +141,19 @@ zeroBox.addEventListener('click', function() {
     displayBox.innerHTML = workingString                                    // Update display box
 })
 
+// .
+let dotBox = document.getElementById('.-box')                           // assign a value for '.-box' 
+console.log(dotBox)
+console.log(dotBox.innerHTML)
+
+dotBox.addEventListener('click', function() {
+    console.log('Box ' + dotBox.innerHTML + ' was clicked!')                  // Button . pressed
+    
+    workingString += dotBox.innerHTML
+    console.log('The value of working string is: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
+})
+
 // +
 let addBox = document.getElementById('add-box')                            // assign a value for 'add-box'
 console.log(addBox)

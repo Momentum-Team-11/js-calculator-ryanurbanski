@@ -6,6 +6,7 @@ body {
     /* background-color: lightgrey; */
 }
 
+/* this is the one for quick testing.. will get removed when .message-box is working */
 .display-box-container {
     background-color: lightcoral;
     display: flex;
@@ -13,11 +14,16 @@ body {
     height: 80px;
 }
 
+.message-box {
+    background-color: bisque;
+}
+
+
 .button-box-container {
     background-color: lightblue;
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     width: 450px;
 }
 

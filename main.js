@@ -9,6 +9,9 @@ let displayString = ""
 let displayBox = document.getElementById("display-box")                 // assign a value for '1-box' 
     console.log(displayBox)
     console.log(displayBox.innerHTML)
+let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
+    console.log(messageBox)
+    console.log(messageBox.innerHTML)
 let oneBox = document.getElementById('1-box')                           // assign a value for '1-box' 
     console.log(oneBox)
     console.log(oneBox.innerHTML)

@@ -10,12 +10,14 @@ body {
 .display-box-container {
     background-color: lightcoral;
     display: flex;
-    width: 450px;
+    width: 345px;
     height: 80px;
 }
 
 .message-box {
     background-color: bisque;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 
@@ -24,7 +26,11 @@ body {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: auto auto auto auto;
-    width: 450px;
+    width: 345px;
+}
+
+.light-button {
+    background-color: aqua;
 }
 
 h3 {

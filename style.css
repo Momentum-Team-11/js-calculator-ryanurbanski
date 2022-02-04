@@ -2,21 +2,8 @@
     margin: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:100;
-    /* color:aliceblue; */
     font-size:x-large;
 }
-
-body {
-    /* background-color: lightgrey; */
-}
-
-/* this is the one for quick testing.. will get removed when .message-box is working */
-/* .display-box-container { */
-    /* background-color: lightcoral; */
-    /* display: flex; */
-    /* width: 345px; */
-    /* height: 80px; */
-/* } */
 
 .message-box {
     background-color: bisque;
@@ -45,6 +32,7 @@ body {
 .message-box {
     background-color: #60B350;
     color:aliceblue;
+    justify-content:flex-end;
 }
 
 h3 {
@@ -56,13 +44,3 @@ h3 {
     width: 100%;
     height: 80px;
 }
-
-/* h4 { */
-    /* /~ background-color: lightseagreen; ~/ */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 100%; */
-    /* height: 100%; */
-/* } */
-

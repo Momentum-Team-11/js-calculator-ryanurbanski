@@ -5,10 +5,7 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
-// OBJECT ASSIGNMENTS                                                   // Leaving all these console messages till I'm done
-// let displayBox = document.getElementById("display-box")                 // assign a value for '1-box' 
-//     console.log(displayBox)
-//     console.log(displayBox.innerHTML)
+// OBJECT ASSIGNMENTS                                                   
 let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
     console.log(messageBox)
     console.log(messageBox.innerHTML)

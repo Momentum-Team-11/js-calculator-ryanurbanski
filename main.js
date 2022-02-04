@@ -5,10 +5,6 @@ console.log('javascript is connected and running!!')
 // the calculations
 let workingString = ""
 let displayString = ""
-// let tempNum1 = 0                         // These were a mistake.. i think.. delete if eval works
-// let tempNum2 = 0
-// let tempOpp = ''
-// let totalNum = 0
 
 // DISPLAY BOX ----------------------------------------------------------------------------------------
 let displayBox = document.getElementById("display-box")
@@ -16,7 +12,7 @@ console.log(displayBox)                                           // show whole 
 console.log(displayBox.innerHTML)                                  //Show the current text of this Object
 
 //change the string for display object
-displayBox.innerHTML = "New string is working!!"                    // test to makes sure I can change the value
+displayBox.innerHTML = workingString                    // test to makes sure I can change the value
 
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
@@ -29,6 +25,7 @@ oneBox.addEventListener('click', function() {
     
     workingString += oneBox.innerHTML
     console.log('The value of working string is: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
 })
 
 // 2
@@ -40,6 +37,7 @@ twoBox.addEventListener('click', function() {
     console.log('Box ' + twoBox.innerHTML + ' was clicked!')                  // Button 1 pressed
     workingString += twoBox.innerHTML
     console.log('The value of working string is: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
 })
 
 // +
@@ -51,6 +49,7 @@ addBox.addEventListener('click', function() {
     console.log('Box ' + addBox.innerHTML + ' was clicked!')                  // Button + pressed
     workingString += addBox.innerHTML
     console.log('The value of working string is now: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
 })
 
 // -
@@ -62,6 +61,7 @@ subBox.addEventListener('click', function() {
     console.log('Box ' + subBox.innerHTML + ' was clicked!')                  // Button - pressed
     workingString += subBox.innerHTML
     console.log('The value of working string is now: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
 })
 
 // C
@@ -73,6 +73,7 @@ cBox.addEventListener('click', function() {
     console.log('Box ' + cBox.innerHTML + ' was clicked!')                  // Button C pressed
     workingString = ''                                                          // workingString reset
     console.log('The value of working string is now: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
 })
 
 // E
@@ -90,8 +91,6 @@ eBox.addEventListener('click', function() {
     console.log('The product of all these should be:  ******  ' + displayString + '  ******')
 
     displayBox.innerHTML = displayString
-
-
 })
 
 

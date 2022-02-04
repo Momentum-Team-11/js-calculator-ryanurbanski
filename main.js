@@ -1,15 +1,12 @@
 
 console.log('javascript is connected and running!!')
 
-// Define the workings strings I'll need to compute and display
-// the calculations
+// GLOBAL VARIABLES
 let workingString = ""
 let displayString = ""
 
 // DISPLAY BOX ----------------------------------------------------------------------------------------
 let displayBox = document.getElementById("display-box")
-console.log(displayBox)                                           // show whole object
-console.log(displayBox.innerHTML)                                  //Show the current text of this Object
 
 //change the string for display object
 displayBox.innerHTML = workingString                    // test to makes sure I can change the value
@@ -40,6 +37,19 @@ twoBox.addEventListener('click', function() {
     displayBox.innerHTML = workingString                                    // Update display box
 })
 
+// 3
+let threeBox = document.getElementById('3-box')                           // assign a value for '3-box' 
+console.log(threeBox)
+console.log(threeBox.innerHTML)
+
+threeBox.addEventListener('click', function() {
+    console.log('Box ' + threeBox.innerHTML + ' was clicked!')                  // Button 3 pressed
+    
+    workingString += threeBox.innerHTML
+    console.log('The value of working string is: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
+})
+
 // +
 let addBox = document.getElementById('add-box')                            // assign a value for 'add-box'
 console.log(addBox)
@@ -64,6 +74,18 @@ subBox.addEventListener('click', function() {
     displayBox.innerHTML = workingString                                    // Update display box
 })
 
+// *
+let multBox = document.getElementById('mult-box')                            // assign a value for 'mult-box'
+console.log(multBox)
+console.log(multBox.innerHTML)
+
+multBox.addEventListener('click', function() {
+    console.log('Box ' + multBox.innerHTML + ' was clicked!')                  // Button * pressed
+    workingString += multBox.innerHTML
+    console.log('The value of working string is now: ' + workingString)     
+    displayBox.innerHTML = workingString                                    // Update display box
+})
+
 // C
 let cBox = document.getElementById('C-box')                            // assign a value for 'C-box'
 console.log(cBox)
@@ -76,7 +98,7 @@ cBox.addEventListener('click', function() {
     displayBox.innerHTML = workingString                                    // Update display box
 })
 
-// E
+// =
 let eBox = document.getElementById('E-box')                            // assign a value for 'E-box'
 console.log(eBox)
 console.log(eBox.innerHTML)

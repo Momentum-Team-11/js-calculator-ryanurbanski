@@ -1,0 +1,10 @@
+.square {
+    background-color: darkslateblue;
+    border: solid 1px silver;
+    height: 150px;
+    width: 150px;
+}
+
+.teal {
+    background-color: teal;
+}

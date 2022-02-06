@@ -8,56 +8,31 @@ let displayString = ""
 // ARRAYS TO MAkE THINGS SIMPLER
 // objectArray = ["messageBox", "oneBox", "twoBox", "threeBox", "fourBox", "fiveBox", "sixBox", "sevenBox", "eightBox", "nineBox", "zeroBox", "subBox", "dotBox", "addBox", "multBox", "divBox", "cBox", "eBox"]
 
-// First function call
-
-document.addEventListener('DOMContentLoaded', function() {
-    firstFunction()
-}, false)
-
-
-    function firstFunction () {
-            var tag = document.createElement("p");
-            var text = document.createTextNode("Tutorix is the best e-learning platform");
-            tag.appendChild(text);
-            var element = document.getElementById("new");
-            element.appendChild(tag);
-    }
-
-
-
 // This will create all the elements for in calculator
-function createCalculatorObject (divClassName, divIdName, divText, divEvalValue) {
+function createCalculatorObject (divClass, divId, divText) {
 
-    var div = document.createElement('div')
-    console.log("div was created successfully!!")
+    var tag = document.createElement("div");
+    var text = document.createTextNode("Node Start");
+    tag.appendChild(text);
+    var element = document.getElementById("new");
+    element.appendChild(tag);
 
-    div.id = divIdName
-    div.className = divClassName
-    div.innerHTML = divText
-    div.divEvalValue = divEvalValue
+    tag.className = divClass
+    tag.id = divId + "-box"
+    tag.innerHTML = divText
 
-    console.log(div.id)
-    console.log(div.className)
-    console.log(div.innerHTML)
-    console.log(div.divEvalValue)
-
-
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     console.log('object creator not causeing any problems!')
-    //     var div = content.createElement('div')
-
-    //     document.getElementById('js-button-container').appendChild(div)
-        
-    // }, false)
 }
 
-createCalculatorObject("one","one", "one", 1)
+// Function Calls
+firstFunction()
+createCalculatorObject("dark-button","1",1)
+createCalculatorObject("message-box", "message","Message" )
 
-// // Simplify trouble shooting print info
-// function clickPrint(objectClicked) {
-//     console.log(objectClicked)
-//     console.log(objectClicked.innerHTML)
-// }
+// Simplify trouble shooting print info
+function clickPrint(objectClicked) {
+    console.log(objectClicked)
+    console.log(objectClicked.innerHTML)
+}
 
 // // OBJECT ASSIGNMENTS                                                   
 // let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
@@ -262,3 +237,12 @@ createCalculatorObject("one","one", "one", 1)
 
 
 
+
+// First function call
+function firstFunction () {
+    var tag = document.createElement("div");
+    var text = document.createTextNode("Tutorix is the best e-learning platform");
+    tag.appendChild(text);
+    var element = document.getElementById("new");
+    element.appendChild(tag);
+}

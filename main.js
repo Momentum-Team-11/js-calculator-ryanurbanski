@@ -8,18 +8,47 @@ let displayString = ""
 // ARRAYS TO MAkE THINGS SIMPLER
 // objectArray = ["messageBox", "oneBox", "twoBox", "threeBox", "fourBox", "fiveBox", "sixBox", "sevenBox", "eightBox", "nineBox", "zeroBox", "subBox", "dotBox", "addBox", "multBox", "divBox", "cBox", "eBox"]
 
+// First function call
+
+document.addEventListener('DOMContentLoaded', function() {
+    firstFunction()
+}, false)
+
+
+    function firstFunction () {
+            var tag = document.createElement("p");
+            var text = document.createTextNode("Tutorix is the best e-learning platform");
+            tag.appendChild(text);
+            var element = document.getElementById("new");
+            element.appendChild(tag);
+    }
+
+
+
 // This will create all the elements for in calculator
 function createCalculatorObject (divClassName, divIdName, divText, divEvalValue) {
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('object creator not causeing any problems!')
-//         var div = content.createElement('div')
-//         div.id = divIdName
-//         div.className = divClassName
-//         div.innerHTML = divText
 
-//         document.getElementById('button-box-container').appendChild(div)
+    var div = document.createElement('div')
+    console.log("div was created successfully!!")
+
+    div.id = divIdName
+    div.className = divClassName
+    div.innerHTML = divText
+    div.divEvalValue = divEvalValue
+
+    console.log(div.id)
+    console.log(div.className)
+    console.log(div.innerHTML)
+    console.log(div.divEvalValue)
+
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     console.log('object creator not causeing any problems!')
+    //     var div = content.createElement('div')
+
+    //     document.getElementById('js-button-container').appendChild(div)
         
-    }, false)
+    // }, false)
 }
 
 createCalculatorObject("one","one", "one", 1)

@@ -5,6 +5,21 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
+function createCalculatorObject (divClass, divId, divText, objName) {
+    let objectName = objName + "Box"
+
+    var tag = document.createElement("div");
+    var text = document.createTextNode("Node Start");
+    tag.appendChild(text);
+    var element = document.getElementById("new");
+    element.appendChild(tag);
+
+    tag.className = divClass
+    tag.id = divId + "-box"
+    tag.innerHTML = divText
+
+    console.log(tag.id)
+}
 
 // Function Calls
 createCalculatorObject("dark-button","C","C","c" )
@@ -25,43 +40,6 @@ createCalculatorObject("dark-button", "0", "0", "zero")
 createCalculatorObject("dark-button", ".", ".", "dot")
 createCalculatorObject("dark-button", "E", "E", "e")
 createCalculatorObject("light-button", "add", "+", "add")
-
-// let cBox = 
-// let mBox = 
-// let sevenBox =
-// let eightBox = 
-// let nineBox = 
-// let divBox = 
-// let fourBox = 
-// let fiveBox = 
-// let sixBox = 
-// let multBox = 
-// let oneBox = 
-// let twoBox = 
-// let threeBox = 
-// let subBox = 
-// let zeroBox = 
-// let dotBox = 
-// let eBox = 
-// let addBox = 
-
-
-
-function createCalculatorObject (divClass, divId, divText, objName) {
-    let objectName = objName + "Box"
-
-    var tag = document.createElement("div");
-    var text = document.createTextNode("Node Start");
-    tag.appendChild(text);
-    var element = document.getElementById("new");
-    element.appendChild(tag);
-
-    tag.className = divClass
-    tag.id = divId + "-box"
-    tag.innerHTML = divText
-
-    console.log(tag.id)
-}
 
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
@@ -216,14 +194,21 @@ function clickPrint(objectClicked) {
 }
 
 
-
-
-
-// // First function call
-// function firstFunction () {
-//     var tag = document.createElement("div");
-//     var text = document.createTextNode("Tutorix is the best e-learning platform");
-//     tag.appendChild(text);
-//     var element = document.getElementById("new");
-//     element.appendChild(tag);
-// }
+// let cBox = 
+// let mBox = 
+// let sevenBox =
+// let eightBox = 
+// let nineBox = 
+// let divBox = 
+// let fourBox = 
+// let fiveBox = 
+// let sixBox = 
+// let multBox = 
+// let oneBox = 
+// let twoBox = 
+// let threeBox = 
+// let subBox = 
+// let zeroBox = 
+// let dotBox = 
+// let eBox = 
+// let addBox = 

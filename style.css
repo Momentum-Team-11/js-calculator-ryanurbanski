@@ -14,8 +14,7 @@
 .button-box-container {
     background-color:#acc9a7;
     display: grid;
-    grid-gap: 1px;
-    grid-template-columns: auto auto auto auto;
+grid-template-columns: 85px 85px 85px 85px ;
     width: 345px;
 }
 
@@ -32,7 +31,7 @@
 .message-box {
     background-color: #60B350;
     color:aliceblue;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 h3 {

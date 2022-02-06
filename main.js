@@ -5,6 +5,11 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
+// ARRAYS TO MAkE THINGS SIMPLER
+objectArray = ["messageBox", "oneBox", "twoBox", "threeBox", "fourBox", "fiveBox", "sixBox", "sevenBox", "eightBox", "nineBox", "zeroBox", "subBox", "dotBox", "addBox", "multBox", "divBox", "cBox", "eBox"]
+
+
+
 // OBJECT ASSIGNMENTS                                                   
 let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
     console.log(messageBox)

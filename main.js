@@ -5,21 +5,6 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
-function createCalculatorObject (divClass, divId, divText, objName) {
-    let objectName = objName + "Box"
-
-    var tag = document.createElement("div");
-    var text = document.createTextNode("Node Start");
-    tag.appendChild(text);
-    var element = document.getElementById("new");
-    element.appendChild(tag);
-
-    tag.className = divClass
-    tag.id = divId + "-box"
-    tag.innerHTML = divText
-
-    console.log(tag.id)
-}
 
 // Function Calls
 createCalculatorObject("dark-button","C","C","c" )
@@ -32,7 +17,9 @@ createCalculatorObject("dark-button", "4", "4", "four")
 createCalculatorObject("dark-button", "5", "5", "five")
 createCalculatorObject("dark-button", "6", "6", "six")
 createCalculatorObject("light-button", "mult", "*", "mult")
+
 createCalculatorObject("dark-button", "1", "1", "one")
+
 createCalculatorObject("dark-button", "2", "2", "two")
 createCalculatorObject("dark-button", "3", "3", "three")
 createCalculatorObject("light-button", "sub", "-", "sub")
@@ -41,17 +28,34 @@ createCalculatorObject("dark-button", ".", ".", "dot")
 createCalculatorObject("dark-button", "E", "E", "e")
 createCalculatorObject("light-button", "add", "+", "add")
 
+function createCalculatorObject (divClass, divId, divText, objName) {
+
+    var tag = document.createElement("div");
+    var text = document.createTextNode("Node Start");
+    tag.appendChild(text);
+    var element = document.getElementById("new");
+    element.appendChild(tag);
+
+    tag.className = divClass
+    tag.id = divId + "-box"
+    tag.innerHTML = divText
+
+    let objectName = objName + "Box"
+    objectName = document.getElementById(tag.id)
+    
+    console.log(objectName)                     // Why does it take the last values above?
+    console.log(tag.id)
+}
+
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
-let oneBox = document.getElementById('1-Box')
-console.log(oneBox.innerHTML)
-console.log(oneBox.innerHTML)
-// oneBox.addEventListener('click', function() {
-//     console.log('Box ' + oneBox.innerHTML + ' was clicked!')                  // Button 1 pressed
-//     workingString += oneBox.innerHTML
-//     console.log('The value of working string is: ' + workingString)     
-//     messageBox.innerHTML = workingString                                    // Update display box
-// })
+// let oneBox = document.getElementById('1-Box')
+oneBox.addEventListener('click', function() {
+    console.log('Box ' + twoBox.innerHTML + ' was clicked!')                  // Button 1 pressed
+    workingString += oneBox.innerHTML
+    console.log('The value of working string is: ' + workingString)     
+    messageBox.innerHTML = workingString   
+})
 
 // // 2
 // twoBox.addEventListener('click', function() {

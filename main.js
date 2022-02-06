@@ -117,7 +117,10 @@ dotBox.addEventListener('click', function() {
 // +
 addBox.addEventListener('click', function() {
     console.log('Box ' + addBox.innerHTML + ' was clicked!')                  // Button + pressed
-    workingString += addBox.innerHTML
+    let lastLetter = workingString.charAt(workingString.length - 1)
+    if ((lastLetter !== "+") && (lastLetter !== "-") && (lastLetter !== "*") &&  (lastLetter !== "/")) {
+        workingString += addBox.innerHTML
+    }
     console.log('The value of working string is now: ' + workingString)     
     messageBox.innerHTML = workingString                                    // Update display box
 })
@@ -154,17 +157,6 @@ cBox.addEventListener('click', function() {
     messageBox.innerHTML = workingString                                    // Update display box
 })
 
-// cBox.addEventListener('mouseover', function() {
-//     console.log('Box ' + cBox.innerHTML + ' was hovered over!')                  // Button C pressed
-//     cBox.style.backgroundColor = "red"
-// })
-
-// cBox.addEventListener('mouseout', function() {
-//     console.log('Box ' + cBox.innerHTML + ' was hovered over!')                  // Button C pressed
-//     cBox.style.backgroundColor = "blue"
-// })
-
-
 // =
 eBox.addEventListener('click', function() {
     console.log('Box ' + eBox.innerHTML + ' was clicked!')                              // Button E pressed
@@ -178,7 +170,17 @@ eBox.addEventListener('click', function() {
     messageBox.innerHTML = displayString
 })
 
+function validate(workingString, currentOperator) {
+    let lastLetter = workingString.charAt(workingString.length - 1)
 
+    if ((lastLetter !== "+") && (lastLetter !== "-") && (lastLetter !== "*") && (lastLetter !== "/") &&  (lastLetter !== "/")) {
+        workingString += addBox.innerHTML
+    }
+
+    if (lastLetter.isInteger) {
+
+    }
+}
 
 
 

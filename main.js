@@ -5,66 +5,25 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
-// ARRAYS TO MAkE THINGS SIMPLER
-objectArray = ["messageBox", "oneBox", "twoBox", "threeBox", "fourBox", "fiveBox", "sixBox", "sevenBox", "eightBox", "nineBox", "zeroBox", "subBox", "dotBox", "addBox", "multBox", "divBox", "cBox", "eBox"]
-
-
-
 // OBJECT ASSIGNMENTS                                                   
-let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
-    console.log(messageBox)
-    console.log(messageBox.innerHTML)
-let oneBox = document.getElementById('1-box')                           // assign a value for '1-box' 
-    console.log(oneBox)
-    console.log(oneBox.innerHTML)
-let twoBox = document.getElementById('2-box')                            // assign a value for '2-box'
-    console.log(twoBox)
-    console.log(twoBox.innerHTML)
-let threeBox = document.getElementById('3-box')                           // assign a value for '3-box' 
-    console.log(threeBox)
-    console.log(threeBox.innerHTML)
-let fourBox = document.getElementById('4-box')                           // assign a value for '4-box' 
-    console.log(fourBox)
-    console.log(fourBox.innerHTML)
-let fiveBox = document.getElementById('5-box')                           // assign a value for '5-box' 
-    console.log(fiveBox)
-    console.log(fiveBox.innerHTML)
-let sixBox = document.getElementById('6-box')                           // assign a value for '6-box' 
-    console.log(sixBox)
-    console.log(sixBox.innerHTML)
-let sevenBox = document.getElementById('7-box')                           // assign a value for '7-box' 
-    console.log(sevenBox)
-    console.log(sevenBox.innerHTML)
-let eightBox = document.getElementById('8-box')                           // assign a value for '8-box' 
-    console.log(eightBox)
-    console.log(eightBox.innerHTML)
-let nineBox = document.getElementById('9-box')                           // assign a value for '9-box' 
-    console.log(nineBox)
-    console.log(nineBox.innerHTML)
-let zeroBox = document.getElementById('0-box')                           // assign a value for '0-box' 
-    console.log(zeroBox)
-    console.log(zeroBox.innerHTML)
-let subBox = document.getElementById('sub-box')                            // assign a value for 'sub-box'
-    console.log(subBox)
-    console.log(subBox.innerHTML)
-let dotBox = document.getElementById('.-box')                           // assign a value for '.-box' 
-    console.log(dotBox)
-    console.log(dotBox.innerHTML)
-let addBox = document.getElementById('add-box')                            // assign a value for 'add-box'
-    console.log(addBox)
-    console.log(addBox.innerHTML)
-let multBox = document.getElementById('mult-box')                            // assign a value for 'mult-box'
-    console.log(multBox)
-    console.log(multBox.innerHTML)
-let divBox = document.getElementById('div-box')                            // assign a value for 'div-box'
-    console.log(divBox)
-    console.log(divBox.innerHTML)
-let cBox = document.getElementById('C-box')                            // assign a value for 'C-box'
-    console.log(cBox)
-    console.log(cBox.innerHTML)
-let eBox = document.getElementById('E-box')                            // assign a value for 'E-box'
-    console.log(eBox)
-    console.log(eBox.innerHTML)
+let messageBox = document.getElementById("M-box")
+let oneBox = document.getElementById('1-box')    
+let twoBox = document.getElementById('2-box')  
+let threeBox = document.getElementById('3-box')     
+let fourBox = document.getElementById('4-box')     
+let fiveBox = document.getElementById('5-box')    
+let sixBox = document.getElementById('6-box')    
+let sevenBox = document.getElementById('7-box')                  
+let eightBox = document.getElementById('8-box')                 
+let nineBox = document.getElementById('9-box')                 
+let zeroBox = document.getElementById('0-box')                
+let subBox = document.getElementById('sub-box')              
+let dotBox = document.getElementById('.-box')               
+let addBox = document.getElementById('add-box')            
+let multBox = document.getElementById('mult-box')         
+let divBox = document.getElementById('div-box')          
+let cBox = document.getElementById('C-box')             
+let eBox = document.getElementById('E-box')            
 
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
@@ -194,6 +153,17 @@ cBox.addEventListener('click', function() {
     console.log('The value of working string is now: ' + workingString)     
     messageBox.innerHTML = workingString                                    // Update display box
 })
+
+// cBox.addEventListener('mouseover', function() {
+//     console.log('Box ' + cBox.innerHTML + ' was hovered over!')                  // Button C pressed
+//     cBox.style.backgroundColor = "red"
+// })
+
+// cBox.addEventListener('mouseout', function() {
+//     console.log('Box ' + cBox.innerHTML + ' was hovered over!')                  // Button C pressed
+//     cBox.style.backgroundColor = "blue"
+// })
+
 
 // =
 eBox.addEventListener('click', function() {

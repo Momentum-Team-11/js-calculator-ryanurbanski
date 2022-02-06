@@ -6,7 +6,6 @@
 }
 
 .message-box {
-    background-color: bisque;
     grid-column-start: 2;
     grid-column-end: 5;
 }
@@ -14,7 +13,8 @@
 .button-box-container {
     background-color:#acc9a7;
     display: grid;
-grid-template-columns: 85px 85px 85px 85px ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1px;
     width: 345px;
 }
 
@@ -23,9 +23,22 @@ grid-template-columns: 85px 85px 85px 85px ;
     font: black;
 }
 
+.light-button:hover {
+    background-color: #60B350;
+    color:aliceblue;
+}
+
 .dark-button {
     background-color: #60B350;
     color:aliceblue;
+}
+
+.dark-button-hover:hover {
+    background-color: #82c676;
+}
+
+.dark-button-hover {
+    color:aliceblue
 }
 
 .message-box {

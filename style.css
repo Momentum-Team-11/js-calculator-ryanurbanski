@@ -6,7 +6,7 @@
 }
 
 .message-box {
-    background-color: bisque;
+    background-color: #60b350;
     grid-column-start: 2;
     grid-column-end: 5;
 }
@@ -14,13 +14,20 @@
 .button-box-container {
     background-color:#acc9a7;
     display: grid;
-    grid-template-columns: 85px 85px 85px 85px ;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1px;
     width: 345px;
 }
 
 .light-button {
     background-color: #82c676;
     font: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
 }
 
 .dark-button {

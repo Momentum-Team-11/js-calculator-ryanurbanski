@@ -5,11 +5,50 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
-// ARRAYS TO MAkE THINGS SIMPLER
-// objectArray = ["messageBox", "oneBox", "twoBox", "threeBox", "fourBox", "fiveBox", "sixBox", "sevenBox", "eightBox", "nineBox", "zeroBox", "subBox", "dotBox", "addBox", "multBox", "divBox", "cBox", "eBox"]
 
-// This will create all the elements for in calculator
-function createCalculatorObject (divClass, divId, divText) {
+// Function Calls
+createCalculatorObject("dark-button","C","C","c" )
+createCalculatorObject("message-box", "M","", "message" )
+createCalculatorObject("dark-button", "7", "7", "seven")
+createCalculatorObject("dark-button", "8", "8", "eight")
+createCalculatorObject("dark-button", "9", "9", "nine")
+createCalculatorObject("light-button", "div", "/", "div")
+createCalculatorObject("dark-button", "4", "4", "four")
+createCalculatorObject("dark-button", "5", "5", "five")
+createCalculatorObject("dark-button", "6", "6", "six")
+createCalculatorObject("light-button", "mult", "*", "mult")
+createCalculatorObject("dark-button", "1", "1", "one")
+createCalculatorObject("dark-button", "2", "2", "two")
+createCalculatorObject("dark-button", "3", "3", "three")
+createCalculatorObject("light-button", "sub", "-", "sub")
+createCalculatorObject("dark-button", "0", "0", "zero")
+createCalculatorObject("dark-button", ".", ".", "dot")
+createCalculatorObject("dark-button", "E", "E", "e")
+createCalculatorObject("light-button", "add", "+", "add")
+
+// let cBox = 
+// let mBox = 
+// let sevenBox =
+// let eightBox = 
+// let nineBox = 
+// let divBox = 
+// let fourBox = 
+// let fiveBox = 
+// let sixBox = 
+// let multBox = 
+// let oneBox = 
+// let twoBox = 
+// let threeBox = 
+// let subBox = 
+// let zeroBox = 
+// let dotBox = 
+// let eBox = 
+// let addBox = 
+
+
+
+function createCalculatorObject (divClass, divId, divText, objName) {
+    let objectName = objName + "Box"
 
     var tag = document.createElement("div");
     var text = document.createTextNode("Node Start");
@@ -21,77 +60,14 @@ function createCalculatorObject (divClass, divId, divText) {
     tag.id = divId + "-box"
     tag.innerHTML = divText
 
+    console.log(tag.id)
 }
 
-// Function Calls
-firstFunction()
-createCalculatorObject("dark-button","1",1)
-createCalculatorObject("message-box", "message","Message" )
-
-// Simplify trouble shooting print info
-function clickPrint(objectClicked) {
-    console.log(objectClicked)
-    console.log(objectClicked.innerHTML)
-}
-
-// // OBJECT ASSIGNMENTS                                                   
-// let messageBox = document.getElementById("M-box")                      // assign a value for 'M-box' - This is a temp while I learn gridbox
-//     console.log(messageBox)
-//     console.log(messageBox.innerHTML)
-// let oneBox = document.getElementById('1-box')                           // assign a value for '1-box' 
-//     console.log(oneBox)
-//     console.log(oneBox.innerHTML)
-// let twoBox = document.getElementById('2-box')                            // assign a value for '2-box'
-//     console.log(twoBox)
-//     console.log(twoBox.innerHTML)
-// let threeBox = document.getElementById('3-box')                           // assign a value for '3-box' 
-//     console.log(threeBox)
-//     console.log(threeBox.innerHTML)
-// let fourBox = document.getElementById('4-box')                           // assign a value for '4-box' 
-//     console.log(fourBox)
-//     console.log(fourBox.innerHTML)
-// let fiveBox = document.getElementById('5-box')                           // assign a value for '5-box' 
-//     console.log(fiveBox)
-//     console.log(fiveBox.innerHTML)
-// let sixBox = document.getElementById('6-box')                           // assign a value for '6-box' 
-//     console.log(sixBox)
-//     console.log(sixBox.innerHTML)
-// let sevenBox = document.getElementById('7-box')                           // assign a value for '7-box' 
-//     console.log(sevenBox)
-//     console.log(sevenBox.innerHTML)
-// let eightBox = document.getElementById('8-box')                           // assign a value for '8-box' 
-//     console.log(eightBox)
-//     console.log(eightBox.innerHTML)
-// let nineBox = document.getElementById('9-box')                           // assign a value for '9-box' 
-//     console.log(nineBox)
-//     console.log(nineBox.innerHTML)
-// let zeroBox = document.getElementById('0-box')                           // assign a value for '0-box' 
-//     console.log(zeroBox)
-//     console.log(zeroBox.innerHTML)
-// let subBox = document.getElementById('sub-box')                            // assign a value for 'sub-box'
-//     console.log(subBox)
-//     console.log(subBox.innerHTML)
-// let dotBox = document.getElementById('.-box')                           // assign a value for '.-box' 
-//     console.log(dotBox)
-//     console.log(dotBox.innerHTML)
-// let addBox = document.getElementById('add-box')                            // assign a value for 'add-box'
-//     console.log(addBox)
-//     console.log(addBox.innerHTML)
-// let multBox = document.getElementById('mult-box')                            // assign a value for 'mult-box'
-//     console.log(multBox)
-//     console.log(multBox.innerHTML)
-// let divBox = document.getElementById('div-box')                            // assign a value for 'div-box'
-//     console.log(divBox)
-//     console.log(divBox.innerHTML)
-// let cBox = document.getElementById('C-box')                            // assign a value for 'C-box'
-//     console.log(cBox)
-//     console.log(cBox.innerHTML)
-// let eBox = document.getElementById('E-box')                            // assign a value for 'E-box'
-//     console.log(eBox)
-//     console.log(eBox.innerHTML)
-
-// // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
-// // 1
+// BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
+// 1
+let oneBox = document.getElementById('1-Box')
+console.log(oneBox.innerHTML)
+console.log(oneBox.innerHTML)
 // oneBox.addEventListener('click', function() {
 //     console.log('Box ' + oneBox.innerHTML + ' was clicked!')                  // Button 1 pressed
 //     workingString += oneBox.innerHTML
@@ -233,16 +209,21 @@ function clickPrint(objectClicked) {
 // })
 
 
-
-
-
-
-
-// First function call
-function firstFunction () {
-    var tag = document.createElement("div");
-    var text = document.createTextNode("Tutorix is the best e-learning platform");
-    tag.appendChild(text);
-    var element = document.getElementById("new");
-    element.appendChild(tag);
+// Simplify trouble shooting print info
+function clickPrint(objectClicked) {
+    console.log(objectClicked.innerHTML)
+    console.log(objectClicked)
 }
+
+
+
+
+
+// // First function call
+// function firstFunction () {
+//     var tag = document.createElement("div");
+//     var text = document.createTextNode("Tutorix is the best e-learning platform");
+//     tag.appendChild(text);
+//     var element = document.getElementById("new");
+//     element.appendChild(tag);
+// }

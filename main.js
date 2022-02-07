@@ -5,13 +5,33 @@ console.log('javascript is connected and running!!')
 let workingString = ""
 let displayString = ""
 
+// Results
+let rDiv = document.getElementById("r-box")
+rDiv.appendChild(document.createTextNode(""))
+
+// Clear
+let cDiv = document.getElementById("c-box")
+cDiv.appendChild(document.createTextNode("C"))
+cDiv.addEventListener('click', function() {
+    workingString =''
+    rDiv.innerText = workingString
+})
+
+// Seven
+let sevenDiv = document.getElementById("7-box")
+sevenDiv.appendChild(document.createTextNode("7"))
+sevenDiv.addEventListener('click', function() {
+    workingString += 7
+    rDiv.innerText = workingString
+})
 
 
-function createCalculatorObject () {
-
-}
-
-
+// // cBox.addEventListener('click', function() {
+// //     console.log('Box ' + cBox.innerHTML + ' was clicked!')                  // Button C pressed
+// //     workingString = ''                                                          // workingString reset
+// //     console.log('The value of working string is now: ' + workingString)     
+// //     messageBox.innerHTML = workingString                                    // Update display box
+// // })
 
 
 
@@ -19,14 +39,12 @@ function createCalculatorObject () {
 // BUTTON EVENT LISTENERS ------------------------------------------------------------------------------
 // 1
 // let oneBox = document.getElementById('1-Box')
-oneBox.addEventListener('click', function() {
-    console.log('Box ' + twoBox.innerHTML + ' was clicked!')                  // Button 1 pressed
-    workingString += oneBox.innerHTML
-    console.log('The value of working string is: ' + workingString)     
-    messageBox.innerHTML = workingString   
-})
-
-
+// oneBox.addEventListener('click', function() {
+//     console.log('Box ' + twoBox.innerHTML + ' was clicked!')                  // Button 1 pressed
+//     workingString += oneBox.innerHTML
+//     console.log('The value of working string is: ' + workingString)     
+//     messageBox.innerHTML = workingString   
+// })
 
 
 
